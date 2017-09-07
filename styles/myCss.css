@@ -2,3 +2,10 @@ h1 {
     font-size: 1em;
     text-align: center;
 }
+strong {
+    color: rgb(77,123,17);
+}
+ul {
+    list-style: circle;
+    margin-left: 50px;
+}
