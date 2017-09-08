@@ -55,12 +55,19 @@
                     <h1>Commit commands</h1>
                     <hr>
 
+                    <p><strong>git add index.html</strong><br>
+                        <strong>git commit -m "commit de index.html</strong><br>
+                    Ajoute puis commit le fichier index.html</p>
+
                     <p><strong>git commit -m "your message"</strong><br>
                     Commit des fichiers de la zone staging vers le repository</p>
 
                     <p><strong>git commit -a</strong><br>
                     Commit les fichiers de la zone staging vers le repository et ouvre l'éditeur par défaut (ici Vim) pour éditer le message</p>
                     <p>2 fois Ctrl+c puis :wq</p>
+
+                    <p><strong>git commit --help</strong><br>
+                    Pour affichage de l'aide lié à "commit"</p>
 
             </div>
 
@@ -91,6 +98,62 @@
                         <li>Ajouter un calque à mon fichier index.html</li>
                     </ul>
 
+            </div>
+
+            <!-- Layer 6 -->
+            <div class="step slide" id="layer-6" data-x="6000">
+                    <h1>Affichage log</h1>
+                    <hr>
+                    <p><strong>git log</strong><br>
+                        Affiche les commits
+                    </p>
+                    <p><strong>git log -1</strong><br>
+                        Affiche le dernier commit
+                    </p>
+                    <p><strong>git log --pretty=oneline</strong> --max-count=2 <br>
+                        <strong>git log oneline </strong>
+                        Affiche sur une ligne les deux derniers commit
+                    </p>
+                    <p><strong>git log --pretty=oneline</strong> --since="5 minutes ago" <br>
+                        Affiche les commits effectués au cours des 5 dernières minutes
+                    </p>
+                    <p><strong>git log --oneline --until="5 minutes ago"</strong><br>
+                        Affiche les commits effectués juqu'au 5 dernières minutes
+                    </p>
+                     <p><strong>git log --oneline --author="Nathalie W"</strong><br>
+                        Affiche les commits effectués par un auteur
+                    </p>
+                        <p><strong>git log --oneline --pretty=format:"%h %cd %s (%an)" --since="1 days ago"</strong><br>
+                        Affiche les commits %h pour le hash, %cd pour current date, %s pour afficher les commentaires, %an pour l'auteur...
+                    </p>
+            </div>
+
+            <!-- Layer 7 -->
+            <div class="step slide" id="layer-7" data-x="6000" data-y="1000" data-rotate="90">
+                    <h1>Format de log</h1>
+                    <hr>
+                    <ul>
+                        <li>--pretty="..." format de sortie</li>
+                        <li>Abbréviation de hash code commit</li>
+                        <li>%d  commit decoration</li>
+                        <li>%ad commit date</li>
+                        <li>%s  commentaires</li>
+                        <li>%an author name</li>
+                        <li>--graph commit tree</li>
+                        <li>--date=...</li>
+                    </ul>
+            </div>
+
+             <!-- Layer 8 -->
+            <div class="step slide" id="layer-8" data-x="7000" data-rotate="180">
+                    <h1>Version</h1>
+                    <hr>
+                   <p><strong>git tag</strong><br>
+                        Affiche des releases
+                    </p>
+                    <p><strong>git tag -a v0.0.1 "beta version"</strong><br>
+                        Creation d'une release
+                    </p>
             </div>
 
         </div>
